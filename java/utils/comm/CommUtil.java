@@ -69,6 +69,7 @@ public class CommUtil implements SerialPortEventListener{
         }
     }
 
+    @Override
     public void serialEvent(SerialPortEvent event) {
         switch (event.getEventType()){
             case SerialPortEvent.DATA_AVAILABLE:
